@@ -12,7 +12,6 @@ exports.getSource = async (req, res, next) => {
     const { url } = req.query
     let sources = null
 
-    console.log(`GETTING SOURCE FROM: ${url}`)
     sources = await getFembedSource(url, next)
 
     if (!sources) {
