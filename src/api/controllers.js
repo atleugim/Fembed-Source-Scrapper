@@ -40,7 +40,7 @@ const getFembedSource = async (url, next) => {
 
     if (!url || typeof url !== 'string') return -1
 
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox',] });
     const page = await browser.newPage();
 
     browser.on("targetcreated", async (target) => {
