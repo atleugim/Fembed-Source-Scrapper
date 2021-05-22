@@ -27,9 +27,22 @@ app.get('/', (_, res) => {
       success: true,
       data: {
         message: "API v1.0.0",
-        apiEndpoint: '/api/v1',
+        endpoint: '/api/v1',
         developer: 'Miguel Vega <atleugim>',
         github: 'https://github.com/atleugim'
+      }
+    })
+})
+
+app.get('/api/v1', (_, res) => {
+  res
+    .status(200)
+    .json({
+      success: true,
+      data: {
+        message: "API v1.0.0",
+        test: '/api/v1/get-source?url=FEMBED_URL',
+        developer: 'Miguel Vega <atleugim>'
       }
     })
 })
