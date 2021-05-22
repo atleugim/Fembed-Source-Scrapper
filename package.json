@@ -1,0 +1,39 @@
+{
+  "name": "fembed_source_scrapper",
+  "version": "1.0.0",
+  "description": "Get Video Source From Fembed.com",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atleugim/Fembed-Source-Scrapper.git"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "get",
+    "source",
+    "video",
+    "fembed",
+    "enbedded"
+  ],
+  "author": "Miguel Vega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atleugim/Fembed-Source-Scrapper/issues"
+  },
+  "homepage": "https://github.com/atleugim/Fembed-Source-Scrapper#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "puppeteer": "^9.1.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
